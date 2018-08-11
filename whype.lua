@@ -1,0 +1,16 @@
+DELETE FROM addon_account_data WHERE owner = 'steam:1100001122ac4be';
+DELETE FROM addon_inventory_items WHERE owner = 'steam:1100001122ac4be';
+DELETE FROM billing WHERE identifier = 'steam:1100001122ac4be';
+DELETE FROM billing WHERE sender = 'steam:1100001122ac4be';
+DELETE FROM datastore_data WHERE owner = 'steam:1100001122ac4be';
+DELETE FROM owned_properties WHERE owner = 'steam:1100001122ac4be';
+DELETE FROM owned_vehicles WHERE owner = 'steam:1100001122ac4be';
+DELETE FROM rented_vehicles WHERE owner = 'steam:1100001122ac4be';
+DELETE FROM user_accounts WHERE identifier = 'steam:1100001122ac4be';
+DELETE FROM user_contacts WHERE identifier = 'steam:1100001122ac4be';
+DELETE FROM user_inventory WHERE identifier = 'steam:1100001122ac4be';
+DELETE FROM user_licenses WHERE owner = 'steam:1100001122ac4be';
+DELETE FROM user_parkings WHERE identifier = 'steam:1100001122ac4be';
+DELETE FROM user_contacts WHERE number IN (SELECT phone_number FROM users WHERE 'steam:1100001122ac4be');
+DELETE FROM characters WHERE identifier = 'steam:1100001122ac4be';
+DELETE FROM users WHERE identifier = 'steam:1100001122ac4be';
